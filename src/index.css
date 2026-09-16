@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-primary-yellow: #F5C518;
+  --color-dark-grey: #2D2D2D;
+  --color-whatsapp-green: #25D366;
+  --color-call-blue: #007BFF;
+}
+
+/* Let's specify custom geometric properties */
+body {
+  background-color: #F9F9F9;
+  color: #2D2D2D;
+}

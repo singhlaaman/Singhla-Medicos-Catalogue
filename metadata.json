@@ -1,0 +1,8 @@
+{
+  "name": "Singhla Medicos Catalog",
+  "description": "Super Speciality & Cancer Medicine Pharmacy website catalog with quick search, category browsing, and WhatsApp/Call enquiries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

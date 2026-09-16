@@ -1,0 +1,77 @@
+{
+  "collections": {
+    "medicines": {
+      "description": "Speciality medicines and products listed on the platform",
+      "fields": {
+        "id": "string",
+        "name": "string",
+        "brandName": "string",
+        "genericName": "string",
+        "saltName": "string",
+        "strength": "string",
+        "category": "string",
+        "manufacturer": "string",
+        "descriptionShort": "string",
+        "descriptionLong": "string",
+        "uses": "array of strings",
+        "sideEffects": "array of strings",
+        "dosage": "string",
+        "storageInstructions": "string",
+        "coldStorage": "string (Yes/No)",
+        "storageTemperature": "string",
+        "prescriptionRequired": "string (Yes/No)",
+        "packaging": "string",
+        "images": "array of strings",
+        "faqs": "array of {question: string, answer: string}",
+        "relatedMedicines": "array of strings (slugs)",
+        "seoTitle": "string",
+        "seoDescription": "string",
+        "slug": "string",
+        "mrp": "number",
+        "discountPrice": "number (optional)",
+        "availability": "string (In Stock/Out of Stock/Limited Stock)",
+        "countryOfOrigin": "string",
+        "dosageForm": "string (Tablet/Capsule/Injection/Syrup/Cream)",
+        "createdAt": "timestamp",
+        "updatedAt": "timestamp",
+        "status": "string (Published/Draft)",
+        "lastEditedBy": "string"
+      }
+    },
+    "categories": {
+      "description": "Category groups for medicines",
+      "fields": {
+        "id": "string",
+        "name": "string",
+        "iconName": "string",
+        "featured": "boolean"
+      }
+    },
+    "faqs": {
+      "description": "Frequently Asked Questions for the website",
+      "fields": {
+        "id": "string",
+        "question": "string",
+        "answer": "string"
+      }
+    },
+    "testimonials": {
+      "description": "Patient and oncologist testimonials/reviews",
+      "fields": {
+        "id": "string",
+        "name": "string",
+        "rating": "number",
+        "text": "string",
+        "date": "string",
+        "verified": "boolean"
+      }
+    },
+    "admin_config": {
+      "description": "Configuration and secure authentication keys for admin panel",
+      "fields": {
+        "passwordHash": "string",
+        "updatedAt": "timestamp"
+      }
+    }
+  }
+}

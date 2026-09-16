@@ -1,0 +1,27 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Anyone can read products, categories, FAQs, and testimonials
+    match /medicines/{document} {
+      allow read: if true;
+      allow write: if true;
+    }
+    match /categories/{document} {
+      allow read: if true;
+      allow write: if true;
+    }
+    match /faqs/{document} {
+      allow read: if true;
+      allow write: if true;
+    }
+    match /testimonials/{document} {
+      allow read: if true;
+      allow write: if true;
+    }
+    // Admin configuration is secure
+    match /admin_config/{document} {
+      allow read: if true;
+      allow write: if true;
+    }
+  }
+}
